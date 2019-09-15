@@ -17,6 +17,33 @@
     <li><em>five</em></li>
 </ol>
 </body>
+<!-- Header before adding a snippet of my lab 1 python code -->
+<head>
+    Look out, code below!
+</head>
+<!-- Snippet of python code from change class in lab 1-->
+<code>
+# Main portion of the class
+while loop:
+    cost, payment = ask_value()
+    change = payment - cost
+    while change < 0:
+        print("You need to pay more than what is owed, try again.")
+        cost, payment = ask_value()
+        change = payment - cost
+
+    change_print = change
+    change = change * 100
+
+    # Calculations for the numbers of each coin, changing the value of change after each calculation
+    quarters = coin_calc(25, change)
+    change = change - quarters * 25
+    dimes = coin_calc(10, change)
+    change = change - dimes * 10
+    nickels = coin_calc(5, change)
+    change = change - nickels * 5
+    pennies = coin_calc(1, change)
+</code>
 
 
 </html>
