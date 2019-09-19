@@ -31,15 +31,18 @@ def about():
         </p>
     '''
 
-
-@app.route('/hello')
-def hello():
-    return "<h1>Hello World</h1>"
-
 @app.route('/user/<username>')
 def show_post(username):
-    username=username;
-    return "<h1>Hello world " + username + "!</h1>"
+    return '''
+    <html>
+        <body>
+            <h1>Hello '''+ username +''', I have a poem for you!</h1>
+            <p>
+                Flask is fun, Python is too, But please give us less, Homework to do  
+            </p>
+        </body>
+    </html>
+    '''
 
 
 if __name__=="__main__":
