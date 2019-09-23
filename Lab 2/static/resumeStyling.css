@@ -1,3 +1,26 @@
 body{
-    background:red;
+    background-image: url("https://i.pinimg.com/originals/76/46/aa/7646aa5c84cf6a9296007af25415ea7c.jpg");
 }
+
+.top_headers{
+    background:red;
+    font-family:"Times New Roman", Times, serif;
+    color:white;
+    align:center;
+    width:45%;
+    padding:20px;
+    border-style:solid;
+    border-radius:20px;
+    font-size:24px;
+}
+
+.resume_body{
+    background:white;
+    font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+    font-size:24px;
+    border-style:solid;
+    width:fit-content;
+    padding:25px;
+    text-align:center;
+}
+
