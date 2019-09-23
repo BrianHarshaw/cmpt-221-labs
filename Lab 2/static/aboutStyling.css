@@ -1,11 +1,14 @@
 .marist_head{
     color:white;
     background-color:red;
+    border-style:solid;
+    border-left-color:grey; border-right-color:grey; border-top-color:black; border-bottom-color:black;
     width:fit-content;
     font-family:'Myriad Pro Semibold',sans-serif;
 }
 
 .para_font{
     font-family:Helvetica, Arial, sans-serif;
+    font-size:20px;
 }
 
