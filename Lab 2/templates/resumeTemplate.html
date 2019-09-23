@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../static/resumeStyling.css">
     <meta charset="UTF-8">
     <title>Brian's Resume</title>
-    <link rel="stylesheet" href="resumeStyling.css">
+    <style>
+        header{
+            float:right;
+            font-size:18px;
+        }
+        h1{
+            text-decoration:underline;
+        }
+        h3{
+            text-decoration:underline;
+        }
+    </style>
 </head>
-<body>
-<!--Name and occupation listed at the top of the resume-->
-<h1>Brian Harshaw</h1>
-<h3>Computer Science Student</h3>
-<!--Header that will contain my important contact and address information-->
-    <header>
-        20 Old Meadow Plain Road, Simsbury CT, 06070	Upper Fulton 6B-5<br>
-        Cell: 860-805-1042                         Home:	 860-651-6542<br>
-        Emails: <a href="mailto:brian46harshaw@gmail.com">brian46harshaw@gmail.com</a> or
+<!--Header that will contain my important contact and address information, floating to the right of my name-->
+<header class="top_headers">
+        Address: 20 Old Meadow Plain Road, Simsbury, CT<br>
+        Marist Campus, Upper Fulton 6B-5<br>
+        Cell: 860-805-1042 &emsp; &emsp; &emsp; Home: 860-651-6542<br>
+        Emails: <a href="mailto:brian46harshaw@gmail.com">brian46harshaw@gmail.com</a><br>
         <a href="mailto:Brian.Harshaw1@marist.edu">Brian.Harshaw1@marist.edu</a><br>
-    </header>
+</header>
+<!--Name and occupation listed at the top of the resume-->
+<h1 class="top_headers">Brian Harshaw</h1>
+<h3 class="top_headers">Computer Science Student</h3>
+
+<body>
 <!--Description list to fill out most of the body-->
     <d1>
         <dt>Education</dt>
             <dd>
-                <ul>
+                <ul class="resume_body">
                     <li>Marist College Sophmore</li>
                     <li>Major: Computer Science</li>
                     <li>Minor: Cybersecurity</li>
@@ -29,14 +43,14 @@
             </dd>
         <dt>Employment</dt>
             <dd>
-                <ul>
+                <ul class="resume_body">
                     <li>Cashier at Big-Y in 2016</li>
                     <li>Looking for computer science internships</li>
                 </ul>
             </dd>
         <dt>Skills</dt>
             <dd>
-                <ul>
+                <ul class="resume_body">
                     <li>Java</li>
                     <li>Python</li>
                     <li>HTML</li>
@@ -46,7 +60,7 @@
             </dd>
         <dt>Interests</dt>
             <dd>
-                <ul>
+                <ul class="resume_body">
                     <li>Computer science and technology</li>
                     <li>Video and card games</li>
                     <li>Cybersecurity and ethical hacking, </li>
