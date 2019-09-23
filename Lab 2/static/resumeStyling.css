@@ -1,19 +1,18 @@
 body{
     background-image: url("https://i.pinimg.com/originals/76/46/aa/7646aa5c84cf6a9296007af25415ea7c.jpg");
 }
-
+/*Class used for the headers at the top of the resume*/
 .top_headers{
-    background:red;
     font-family:"Times New Roman", Times, serif;
-    color:white;
     align:center;
     width:45%;
     padding:20px;
     border-style:solid;
     border-radius:20px;
+    border-color:black;
     font-size:24px;
 }
-
+/*Class used for the unordered list in the detail list */
 .resume_body{
     background:white;
     font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
@@ -24,3 +23,23 @@ body{
     text-align:center;
 }
 
+/*Customizes the categories on the resume such as education and skills*/
+.resume_categories{
+    background:red;
+    color:white;
+    font-family:"fantasy",fantasy;
+    font-size:22px;
+    padding:15px;
+    border-style:outset;
+    border-color:black;
+    width:fit-content;
+    text-align:left;
+}
+
+/*Fix to an issue where the bullets hung to the far left in the list blocks*/
+ul{
+    list-style-position:inside;
+    text-align:center;
+    width:70%;
+    margin:auto;
+}
