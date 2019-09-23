@@ -3,16 +3,17 @@
     color:white;
     background-color:red;
     border-style:solid;
-    border-left-color:grey; border-right-color:grey; border-top-color:black; border-bottom-color:black;
+    border-left-color:white; border-right-color:white; border-top-color:black; border-bottom-color:black;
     width:fit-content;
     font-family:'Myriad Pro Semibold',sans-serif;
     border-radius:40px;
     padding:20px;
 }
 
-/* Linear gradient for the background*/
+/* Linear gradient for the background. I am sure there is a more efficient way to do this than go back and forth
+between colors, but I skimped out here.*/
 body{
-    background:linear-gradient(-45deg,red,grey);
+    background:linear-gradient(-45deg,red,lightcoral,red,lightcoral,red,lightcoral,red,lightcoral,red);
 }
 
 /*Fix for a spacing error with the border of the ordered list */
