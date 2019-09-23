@@ -1,3 +1,4 @@
+/*Class for the second header in the about page */
 .marist_head{
     color:white;
     background-color:red;
@@ -5,10 +6,31 @@
     border-left-color:grey; border-right-color:grey; border-top-color:black; border-bottom-color:black;
     width:fit-content;
     font-family:'Myriad Pro Semibold',sans-serif;
+    border-radius:40px;
+    padding:20px;
 }
 
+/* Linear gradient for the background*/
+body{
+    background:linear-gradient(-45deg,red,grey);
+}
+
+/*Fix for a spacing error with the border of the ordered list */
+ol{
+    padding:70%;
+}
+
+/*Class to change the second paragraph*/
 .para_font{
     font-family:Helvetica, Arial, sans-serif;
     font-size:20px;
+    border-style:solid;
+    border-spacing:25px 25px;
+    overflow:auto;
+    vertical-align:auto;
+    padding:25px;
+    border-radius:40px;
+    width:fit-content;
+    background-color:white;
 }
 
