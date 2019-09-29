@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/index')
 def about():
-    return app.send_static_file('index.html')
+    return render_template('index.html')
 
 if __name__=="__main__":
     app.run(port=80, debug=True)
