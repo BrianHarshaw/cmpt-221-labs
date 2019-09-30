@@ -21,11 +21,14 @@
 
   {% block portfolio %}
     {{super()}}
-    
+    <!-- Block would be changes to the photos, but they are changed in base.html already, and if I am supposed to change
+    them here then I am unaware of how to do so-->
   {% endblock portfolio %}
 
   {% block about %}
     {{super()}}
+    {% block leftAbout %}My name is Brian Harshaw and I am currently a sophomore at Marist College looking for an internship. I am majoring in computer science with a minor in cybersecurity.{% endblock leftAbout %}
+    {% block rightAbout %}I currently have a 3.9 GPA and have been on the dean's list every semester, as well as being part of the honors program. I am as industrious of a worker as I am a student.{% endblock rightAbout %}
 
   {% endblock about %}
 
