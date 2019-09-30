@@ -4,20 +4,16 @@
 {% block head %}
   {{ super() }}
 {% endblock head %}
-<!--Block for the body-->
-{% block body %}}
-{{super()}}
-{% endblock body%}
 
 <!--Block for navigation that changes the header to Marist College-->
+{% block navHead %}Marist College{% endblock navHead %}
 {% block navigation %}
-  {% block navHead %}Marist College{% endblock navHead %}
   {{super()}}
 {% endblock navigation %}
 <!--Block for masthead that changes the header to my name and sub to my occupation-->
+{% block mastHead %}Brian Harshaw{% endblock mastHead %}
+{% block mastSub %}Marist Student - Amateur Web Developer{% endblock mastSub %}
 {% block masthead %}
-  {% block mastHead %}Brian Harshaw{% endblock mastHead %}
-  {% block mastSub %}Marist Student - Amateur Web Developer{% endblock mastSub %}
   {{super()}}
 {% endblock masthead %}
 <!--Block for portfolio changes-->
@@ -27,15 +23,15 @@
   them here then I am unaware of how to do so-->
 {% endblock portfolio %}
 <!--Block for about that changes the paragraph to important info for employers-->
+{% block leftAbout %}My name is Brian Harshaw and I am currently a sophomore at Marist College looking for an internship. I am majoring in computer science with a minor in cybersecurity.{% endblock leftAbout %}
+{% block rightAbout %}I currently have a 3.9 GPA and have been on the dean's list every semester, as well as being part of the honors program. I am as industrious of a worker as I am a student.{% endblock rightAbout %}
 {% block about %}
-  {% block leftAbout %}My name is Brian Harshaw and I am currently a sophomore at Marist College looking for an internship. I am majoring in computer science with a minor in cybersecurity.{% endblock leftAbout %}
-  {% block rightAbout %}I currently have a 3.9 GPA and have been on the dean's list every semester, as well as being part of the honors program. I am as industrious of a worker as I am a student.{% endblock rightAbout %}
   {{super()}}
 {% endblock about %}
 <!--Block for the footer that displays the address of Marist-->
+{% block address1 %}3399 North Rd{% endblock address1 %}
+{% block address2 %}Poughkeepsie, NY 12601{% endblock address2 %}
 {% block footer %}
-  {% block address1 %}3399 North Rd{% endblock address1 %}
-  {% block address2 %}Poughkeepsie, NY 12601{% endblock address2 %}
   {{super()}}
 {% endblock footer %}
 
