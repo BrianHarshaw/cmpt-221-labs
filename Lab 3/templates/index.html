@@ -7,35 +7,35 @@
 
 {% block body %}}
 {{super()}}
-
-  {% block navigation %}
-    {{super()}}
-    {% block navHead %}Marist College{% endblock navHead %}
-  {% endblock navigation %}
-
-  {% block masthead %}
-    {{super()}}
-    {% block mastHead %}Brian Harshaw{% endblock mastHead %}
-    {% block mastSub %}Marist Student - Amateur Web Developer{% endblock mastSub %}
-  {% endblock masthead %}
-
-  {% block portfolio %}
-    {{super()}}
-    <!-- Block would be changes to the photos, but they are changed in base.html already, and if I am supposed to change
-    them here then I am unaware of how to do so-->
-  {% endblock portfolio %}
-
-  {% block about %}
-    {{super()}}
-    {% block leftAbout %}My name is Brian Harshaw and I am currently a sophomore at Marist College looking for an internship. I am majoring in computer science with a minor in cybersecurity.{% endblock leftAbout %}
-    {% block rightAbout %}I currently have a 3.9 GPA and have been on the dean's list every semester, as well as being part of the honors program. I am as industrious of a worker as I am a student.{% endblock rightAbout %}
-
-  {% endblock about %}
-
-  {% block footer %}
-    {{super()}}
-    {% block address1 %}3399 North Rd{% endblock address1 %}
-    {% block address2 %}}Poughkeepsie, NY 12601{% endblock address2 %}
-
-  {% endblock footer %}
 {% endblock body%}
+
+
+{% block navigation %}
+  {% block navHead %}Marist College{% endblock navHead %}
+  {{super()}}
+{% endblock navigation %}
+
+{% block masthead %}
+  {% block mastHead %}Brian Harshaw{% endblock mastHead %}
+  {% block mastSub %}Marist Student - Amateur Web Developer{% endblock mastSub %}
+  {{super()}}
+{% endblock masthead %}
+
+{% block portfolio %}
+  {{super()}}
+  <!-- Block would be changes to the photos, but they are changed in base.html already, and if I am supposed to change
+  them here then I am unaware of how to do so-->
+{% endblock portfolio %}
+
+{% block about %}
+  {% block leftAbout %}My name is Brian Harshaw and I am currently a sophomore at Marist College looking for an internship. I am majoring in computer science with a minor in cybersecurity.{% endblock leftAbout %}
+  {% block rightAbout %}I currently have a 3.9 GPA and have been on the dean's list every semester, as well as being part of the honors program. I am as industrious of a worker as I am a student.{% endblock rightAbout %}
+  {{super()}}
+{% endblock about %}
+
+{% block footer %}
+  {% block address1 %}3399 North Rd{% endblock address1 %}
+  {% block address2 %}}Poughkeepsie, NY 12601{% endblock address2 %}
+  {{super()}}
+{% endblock footer %}
+
