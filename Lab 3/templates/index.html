@@ -7,8 +7,30 @@
 
 {% block body %}}
 {{super()}}
+
   {% block navigation %}
     {{super()}}
     {% block content %}Marist College{% endblock content %}
   {% endblock navigation %}
+
+  {% block masthead %}
+    {{super()}}
+    {% block mastName %}Brian Harshaw{% endblock mastName %}
+    {% block mastSub %}Marist Student - Amateur Web Developer{% endblock %}
+  {% endblock masthead %}
+
+  {% block portfolio %}
+    {{super()}}
+
+  {% endblock portfolio %}
+
+  {% block about %}
+    {{super()}}
+
+  {% endblock about %}
+
+  {% block footer %}
+    {{super()}}
+
+  {% endblock footer %}
 {% endblock body%}
