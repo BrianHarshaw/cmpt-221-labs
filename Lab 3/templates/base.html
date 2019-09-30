@@ -49,6 +49,7 @@
   {% endblock %}
 
   <!-- Masthead -->
+    {% block masthead %}
   <header class="masthead bg-primary text-white text-center">
     <div class="container d-flex align-items-center flex-column">
 
@@ -56,7 +57,7 @@
       <img class="masthead-avatar mb-5" src="{{url_for( 'static',filename='img/myFace1.jpg')}}" alt="">
 
       <!-- Masthead Heading -->
-      <h1 class="masthead-heading text-uppercase mb-0">Brian Harshaw</h1>
+      <h1 class="masthead-heading text-uppercase mb-0">{% block mastName %}{% endblock %}</h1>
 
       <!-- Icon Divider -->
       <div class="divider-custom divider-light">
@@ -68,12 +69,14 @@
       </div>
 
       <!-- Masthead Subheading -->
-      <p class="masthead-subheading font-weight-light mb-0">Marist Student - Amateur Web Developer</p>
+      <p class="masthead-subheading font-weight-light mb-0">{%block mastSub %}{% endblock %}</p>
 
     </div>
   </header>
+    {% endblock %}
 
   <!-- Portfolio Section -->
+    {% block portfolio %}
   <section class="page-section portfolio" id="portfolio">
     <div class="container">
 
@@ -169,7 +172,9 @@
 
     </div>
   </section>
+    {% endblock %}
 
+    {% block about %}
   <!-- About Section -->
   <section class="page-section bg-primary text-white mb-0" id="about">
     <div class="container">
@@ -206,7 +211,9 @@
 
     </div>
   </section>
+    {% endblock %}
 
+    {% block contact %}
   <!-- Contact Section -->
   <section class="page-section" id="contact">
     <div class="container">
@@ -267,7 +274,9 @@
 
     </div>
   </section>
+    {% endblock %}
 
+    {% block footer %}
   <!-- Footer -->
   <footer class="footer text-center">
     <div class="container">
@@ -308,6 +317,7 @@
       </div>
     </div>
   </footer>
+    {% endblock %}
 
   <!-- Copyright Section -->
   <section class="copyright py-4 text-center text-white">
