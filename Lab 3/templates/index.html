@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 
-{% block title %}Brian{% endblock title %}
+{% block title %}Brian Harshaw{% endblock title %}
 {% block head %}
   {{ super() }}
 {% endblock head %}
+
+{% block body %}}
+  {% block navigation %}
+    {% block content %}Marist College{% endblock content %}
+  {% endblock navigation %}
+{% endblock body%}
