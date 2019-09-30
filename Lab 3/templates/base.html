@@ -26,7 +26,7 @@
     {% block navigation %}
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">{% block content %}{% endblock %}</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">{% block navHead %}{% endblock %}</a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -57,7 +57,7 @@
       <img class="masthead-avatar mb-5" src="{{url_for( 'static',filename='img/myFace1.jpg')}}" alt="">
 
       <!-- Masthead Heading -->
-      <h1 class="masthead-heading text-uppercase mb-0">{% block mastName %}{% endblock %}</h1>
+      <h1 class="masthead-heading text-uppercase mb-0">{% block mastHead %}{% endblock %}</h1>
 
       <!-- Icon Divider -->
       <div class="divider-custom divider-light">
@@ -194,10 +194,10 @@
       <!-- About Section Content -->
       <div class="row">
         <div class="col-lg-4 ml-auto">
-          <p class="lead">My name is Brian Harshaw and I am currently a sophomore at Marist College looking for an internship. I am majoring in computer science with a minor in cybersecurity.</p>
+          <p class="lead">{% block leftAbout %}{% endblock %}</p>
         </div>
         <div class="col-lg-4 mr-auto">
-          <p class="lead">I currently have a 3.9 GPA and have been on the dean's list every semester, as well as being part of the honors program. I am as industrious of a worker as I am a student.</p>
+          <p class="lead">{% block rightAbout %}{% endblock %}</p>
         </div>
       </div>
 
