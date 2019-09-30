@@ -6,7 +6,9 @@
 {% endblock head %}
 
 {% block body %}}
+{{super()}}
   {% block navigation %}
+    {{super()}}
     {% block content %}Marist College{% endblock content %}
   {% endblock navigation %}
 {% endblock body%}
